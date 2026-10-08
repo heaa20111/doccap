@@ -40,10 +40,13 @@ account a file is stored in), the list of folders and files DocCap created, and 
 choose to restore.</li>
 <li><strong>Uploads happen only on your action</strong> (when you choose "Phone + Cloud" or "Upload to cloud").
 Nothing is uploaded automatically.</li>
-<li><strong>End-to-end encryption:</strong> the content of every document is encrypted on your phone
-(AES-256-GCM) before it is uploaded. The key is stored on your phone, protected by the Android Keystore, and can
-be restored only with your 24-word recovery key, which only you know. Google and the developer cannot read
-your documents.</li>
+<li><strong>End-to-end encryption (default):</strong> unless you switch it off for an upload, the content of the
+document is encrypted on your phone (AES-256-GCM) before it is uploaded. The key is stored on your phone, protected
+by the Android Keystore, and can be restored only with your 24-word recovery key, which only you know. Google and
+the developer cannot read these documents.</li>
+<li><strong>Unencrypted uploads (your choice):</strong> for every upload you can switch encryption off. The document
+is then stored in your Drive as a normal PDF, which you can open in Google Drive, but which Google, and anyone you
+give access to your Drive, can read. The developer still receives nothing.</li>
 <li><strong>Not encrypted:</strong> file names (the document title), folder names, file sizes and dates are
 visible in your Drive so that you can find your files.</li>
 <li>Access tokens are managed by Google Play services on your phone. Removing an account in DocCap's settings
@@ -100,10 +103,13 @@ welchem Konto eine Datei liegt), die Liste der von DocCap erstellten Ordner und 
 die du wiederherstellen möchtest.</li>
 <li><strong>Hochgeladen wird nur auf deine Aktion hin</strong> („Handy + Cloud“ oder „In die Cloud hochladen“).
 Nichts wird automatisch hochgeladen.</li>
-<li><strong>Ende-zu-Ende-Verschlüsselung:</strong> Der Inhalt jedes Dokuments wird vor dem Hochladen auf deinem Handy
-verschlüsselt (AES-256-GCM). Der Schlüssel liegt auf deinem Handy, geschützt durch den Android Keystore, und lässt
-sich nur mit deinem 24-Wörter-Wiederherstellungsschlüssel wiederherstellen, den nur du kennst. Weder Google noch
-der Entwickler können deine Dokumente lesen.</li>
+<li><strong>Ende-zu-Ende-Verschlüsselung (Standard):</strong> Sofern du sie für einen Upload nicht ausschaltest, wird
+der Inhalt des Dokuments vor dem Hochladen auf deinem Handy verschlüsselt (AES-256-GCM). Der Schlüssel liegt auf
+deinem Handy, geschützt durch den Android Keystore, und lässt sich nur mit deinem 24-Wörter-Wiederherstellungsschlüssel
+wiederherstellen, den nur du kennst. Weder Google noch der Entwickler können diese Dokumente lesen.</li>
+<li><strong>Unverschlüsselte Uploads (deine Wahl):</strong> Bei jedem Upload kannst du die Verschlüsselung ausschalten.
+Das Dokument liegt dann als normales PDF in deinem Drive. Du kannst es in Google Drive öffnen, aber auch Google und
+jeder, dem du Zugriff auf dein Drive gibst, kann es lesen. Der Entwickler erhält weiterhin nichts.</li>
 <li><strong>Nicht verschlüsselt:</strong> Dateinamen (der Dokumenttitel), Ordnernamen, Dateigrößen und Zeitstempel
 sind in deinem Drive sichtbar, damit du deine Dateien wiederfindest.</li>
 <li>Zugriffstoken verwaltet Google Play-Dienste auf deinem Handy. Das Entfernen eines Kontos in den Einstellungen von
@@ -162,9 +168,12 @@ zu beschweren.</p>
 <li><strong>بيانات Google التي يقرؤها التطبيق:</strong> البريد الإلكتروني والاسم لحساب Google (لعرض الحساب الذي حُفظ فيه
 الملف)، وقائمة المجلدات والملفات التي أنشأها DocCap، ومحتوى الملفات التي تختار استرجاعها.</li>
 <li><strong>الرفع يتم فقط بأمر منك</strong> (عند اختيار «الهاتف + السحابة» أو «رفع إلى السحابة»). لا يُرفع شيء تلقائيًا.</li>
-<li><strong>تشفير من طرف إلى طرف:</strong> يُشفَّر محتوى كل مستند على هاتفك (AES-256-GCM) قبل رفعه. المفتاح محفوظ على
-هاتفك ومحمي بـ Android Keystore، ولا يمكن استعادته إلا بمفتاح الاسترداد المكوّن من 24 كلمة الذي تعرفه أنت فقط.
-لا Google ولا المطوّر يستطيعان قراءة مستنداتك.</li>
+<li><strong>تشفير من طرف إلى طرف (الافتراضي):</strong> ما لم توقفه عند الرفع، يُشفَّر محتوى المستند على هاتفك
+(AES-256-GCM) قبل رفعه. المفتاح محفوظ على هاتفك ومحمي بـ Android Keystore، ولا يمكن استعادته إلا بمفتاح الاسترداد
+المكوّن من 24 كلمة الذي تعرفه أنت فقط. لا Google ولا المطوّر يستطيعان قراءة هذه المستندات.</li>
+<li><strong>الرفع دون تشفير (باختيارك):</strong> يمكنك إيقاف التشفير عند كل عملية رفع. عندها يُحفظ المستند في Drive
+كملف PDF عادي يمكنك فتحه في Google Drive، لكن تستطيع Google وكل من تمنحه وصولًا إلى Drive قراءته. المطوّر لا يستلم
+شيئًا في هذه الحالة أيضًا.</li>
 <li><strong>غير مشفّر:</strong> أسماء الملفات (عنوان المستند)، وأسماء المجلدات، وأحجام الملفات وتواريخها تظهر في Drive
 لتتمكن من إيجاد ملفاتك.</li>
 <li>تدير خدمات Google Play رموز الوصول على هاتفك. إزالة الحساب من إعدادات DocCap تلغي وصول التطبيق، ويمكنك أيضًا
